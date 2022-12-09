@@ -5,6 +5,26 @@ from database import db_name
 
 db = SQLAlchemy()
 
+class User(db.Model):
+    pass
+
+
+class TvSeries(db.Model):
+    pass
+
+
+class TvSeason(db.Model):
+    pass
+
+
+class TvEpisode(db.Model):
+    pass
+
+
+class TvStar(db.Model):
+    pass
+
+
 def connect_to_db(flask_app, db_name=db_name, echo=True):
     db_uri = f'postgresql:///{db_name}'
 
