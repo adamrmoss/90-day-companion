@@ -7,6 +7,9 @@ from crud import create_user
 
 app = Flask(__name__)
 
+# A secret key is needed to use Flask sessioning features
+app.secret_key = 'A SECRET KEY'
+
 
 # Replace this with routes and view functions!
 
